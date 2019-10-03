@@ -10,7 +10,12 @@ const Layout = ({ children }) => (
     <Header />
     <div>
       <Content>{children}</Content>
-      <Footer>Made with ❤️</Footer>
+      <Footer>
+        © {new Date().getFullYear()}, Built with love
+        <span rol="img" aria-label="heart-emoji">
+          ❤️
+        </span>
+      </Footer>
     </div>
   </>
 )
